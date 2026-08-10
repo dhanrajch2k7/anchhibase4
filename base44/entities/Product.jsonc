@@ -1,0 +1,76 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Piece Name"
+    },
+    "collection_id": {
+      "type": "string",
+      "title": "Collection ID"
+    },
+    "collection_name": {
+      "type": "string",
+      "title": "Collection Name"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "enum": [
+        "Bridal",
+        "Groom",
+        "Engagement",
+        "Festive",
+        "Accessories"
+      ],
+      "default": "Bridal"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "price_range": {
+      "type": "string",
+      "title": "Price Range"
+    },
+    "fabric": {
+      "type": "string",
+      "title": "Fabric"
+    },
+    "embroidery_type": {
+      "type": "string",
+      "title": "Embroidery Technique"
+    },
+    "craftsmanship_hours": {
+      "type": "number",
+      "title": "Craftsmanship Hours"
+    },
+    "color": {
+      "type": "string",
+      "title": "Color"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Main Image URL",
+      "format": "url"
+    },
+    "detail_images": {
+      "type": "array",
+      "title": "Detail Images",
+      "items": {
+        "type": "string",
+        "format": "url"
+      }
+    },
+    "is_statement": {
+      "type": "boolean",
+      "title": "Statement Piece (2-col in grid)",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "category"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Collection",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Collection Name"
+    },
+    "tagline": {
+      "type": "string",
+      "title": "Tagline"
+    },
+    "description": {
+      "type": "string",
+      "title": "Description"
+    },
+    "inspiration": {
+      "type": "string",
+      "title": "Inspiration / Story"
+    },
+    "hero_image_url": {
+      "type": "string",
+      "title": "Hero Image URL",
+      "format": "url"
+    },
+    "accent_color": {
+      "type": "string",
+      "title": "Accent Color (hex)",
+      "default": "#E34A26"
+    },
+    "order": {
+      "type": "number",
+      "title": "Display Order",
+      "default": 0
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

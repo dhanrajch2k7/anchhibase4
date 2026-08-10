@@ -1,0 +1,73 @@
+{
+  "name": "Inquiry",
+  "type": "object",
+  "properties": {
+    "product_id": {
+      "type": "string",
+      "title": "Product ID"
+    },
+    "product_name": {
+      "type": "string",
+      "title": "Product Name"
+    },
+    "client_name": {
+      "type": "string",
+      "title": "Client Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email",
+      "format": "email"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "occasion": {
+      "type": "string",
+      "title": "Occasion",
+      "enum": [
+        "Wedding",
+        "Engagement",
+        "Reception",
+        "Mehendi / Sangeet",
+        "Festive",
+        "Other"
+      ],
+      "default": "Wedding"
+    },
+    "timeline": {
+      "type": "string",
+      "title": "Timeline",
+      "enum": [
+        "Under 1 month",
+        "1-3 months",
+        "3-6 months",
+        "6+ months"
+      ],
+      "default": "3-6 months"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "reference_number": {
+      "type": "string",
+      "title": "Reference Number"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "new",
+        "contacted",
+        "closed"
+      ],
+      "default": "new"
+    }
+  },
+  "required": [
+    "client_name",
+    "email"
+  ]
+}
